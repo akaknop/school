@@ -114,11 +114,21 @@ aside {
   margin-left: 45%;
   animation: spin 2s linear infinite;
 }
+loadp {
+  font-size: 20px;
+    font-family: 'Chonburi', cursive;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
 
 .follow {
   font-family: RocknRoll One;
