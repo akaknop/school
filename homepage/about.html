@@ -24,14 +24,14 @@
       </div>
 
       <div class="loader"></div>
-      <p class="loadp">COMING SOON</p>
-      
+      <h1>COMING SOON</h1>
+
       <audio preload="auto" src="../Ink.mp3" loop="true" autobuffer id="myaudio">
         ดีใจด้วยนะ - Piano Version
         </audio>
-        
+
         <script>
-        
+
         function setCookie(c_name,value,exdays)
         {
             var exdate=new Date();
@@ -39,7 +39,7 @@
             var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
             document.cookie=c_name + "=" + c_value;
         }
-        
+
         function getCookie(c_name)
         {
             var i,x,y,ARRcookies=document.cookie.split(";");
@@ -54,7 +54,7 @@
                 }
               }
         }
-        
+
         var song = document.getElementsByTagName('audio')[0];
         var played = false;
         var tillPlayed = getCookie('timePlayed');
@@ -71,7 +71,7 @@
                         played = true;
                 }
             }
-        
+
             else {
             setCookie('timePlayed', song.currentTime);
             }
