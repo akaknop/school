@@ -50,12 +50,15 @@ aside {
   float: right;
   font-style: italic;
   background-color: lightgray;
+  border-radius: 25px;
 }
 
 .ko {
   font-family: 'Chonburi', cursive;
 }
-
+.ko2 {
+  font-family: 'Chonburi', cursive;
+}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -64,6 +67,7 @@ aside {
   text-align: center;
   font-family: arial;
   font-family: 'RocknRoll One', sans-serif;
+  background-color: white;
 }
 
 .title {
@@ -99,6 +103,7 @@ aside {
   margin-left: 35%;
   font-family: 'RocknRoll One', sans-serif;
 }
+
 
 .loader {
   border: 16px solid #f3f3f3; /* Light grey */
@@ -183,6 +188,28 @@ aside {
 }
 
 @media screen and (max-width: 720px) {
+  .ko {
+    font-family: 'Chonburi', cursive;
+    font-size: 15px;
+  }
+  .ko2 {
+    font-family: 'Chonburi', cursive;
+    font-size: 10px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    max-height: 100% auto;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    font-family: 'RocknRoll One', sans-serif;
+    background-color: white;
+  }
+  .title {
+    color: grey;
+    font-size: 12px;
+  }
   .follow {
     font-family: RocknRoll One;
     font-size: 25px;
