@@ -20,7 +20,7 @@
         <a class="active" href="./index.html">หน้าหลัก</a>
         <a href="./profile.html">โปรไฟล์</a>
         <a href="./about.html">เกี่ยวกับ</a>
-
+        <a href="./gallery.html">คลังรูปภาพ</a>
       </div>
       <aside>
         <h2 class="ko">จบม.3</h2>
@@ -29,27 +29,27 @@
         <script>
         // Set the date we're counting down to
         var countDownDate = new Date("Mar 26, 2021 15:40:00").getTime();
-        
+
         // Update the count down every 1 second
         var x = setInterval(function() {
-        
+
           // Get today's date and time
           var now = new Date().getTime();
-            
+
           // Find the distance between now and the count down date
           var distance = countDownDate - now;
-            
+
           // Time calculations for days, hours, minutes and seconds
           var days = Math.floor(distance / (1000 * 60 * 60 * 24));
           var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
           var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
+
           // Output the result in an element with id="demo"
           document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
           + minutes + "m " + seconds + "s ";
-            
-          // If the count down is over, write some text 
+
+          // If the count down is over, write some text
           if (distance < 0) {
             clearInterval(x);
             document.getElementById("countdown").innerHTML = "จบม.3เเย้วววว ";
@@ -57,14 +57,14 @@
         }, 1000);
         </script>
       </aside>
-      
+
 
       <audio preload="auto" src="../Ink.mp3" loop="true" autobuffer id="myaudio">
         ดีใจด้วยนะ - Piano Version
         </audio>
-        
+
         <script>
-        
+
         function setCookie(c_name,value,exdays)
         {
             var exdate=new Date();
@@ -72,7 +72,7 @@
             var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
             document.cookie=c_name + "=" + c_value;
         }
-        
+
         function getCookie(c_name)
         {
             var i,x,y,ARRcookies=document.cookie.split(";");
@@ -87,7 +87,7 @@
                 }
               }
         }
-        
+
         var song = document.getElementsByTagName('audio')[0];
         var played = false;
         var tillPlayed = getCookie('timePlayed');
@@ -104,7 +104,7 @@
                         played = true;
                 }
             }
-        
+
             else {
             setCookie('timePlayed', song.currentTime);
             }
